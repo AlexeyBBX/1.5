@@ -1,0 +1,177 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: "TTLakes-Medium";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    src: local("TTLakes-Medium"),
+    url("TTLakes-Medium.woff") format("woff"),
+    url("TTLakes-Medium.woff") format("woff2");
+}
+
+body {
+    background: #F8F8F8;
+    font-size: 16px;
+    font-family: "TTLakes-Medium";
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+    letter-spacing: -0.2px;
+}
+
+li {
+    list-style-type: none;
+}
+
+.repair {
+    background: #FFFFFF;
+    border-top: solid 1px #D9FFF5;
+    height: 56px;
+    margin-bottom: 24px;
+    text-transform: uppercase;
+    color: #7E7E82;
+}
+
+.repair__text {
+    padding-left: 24px;
+    padding-top: 16px;
+}
+
+.li__brands {
+    width: 240px;
+    height: 72px;
+    background: #FFFFFF;
+    border-radius: 6px;
+    border: solid 1px #EAEAEA;
+    display: flex;
+    align-items: center 
+
+
+}
+
+.li__brands-img {
+    margin-left: 16px;
+
+}
+
+.li__go {
+    margin-left: auto;
+    margin-right: 16px;
+}
+
+#more {
+    display: none;
+}
+
+#btn {
+    display: flex;
+    align-items: center;
+    margin-left: 25px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 150% */
+    letter-spacing: -0.2px;
+    border: none;
+}
+
+button {
+    background-color: #F8F8F8;
+}
+
+button p{
+    margin-left: 9px;
+}
+
+@media (min-width: 0px ) and (max-width: 767px) {
+
+.seelist {
+    display: none;
+}
+
+#btn {
+    display: none;
+}
+
+#img {
+    display: none;
+}
+
+.repair {
+    height: 80px;
+    min-width: 320px;
+}
+
+.repair__text {
+    padding-left: 16px;
+    padding-top: 16px;
+}
+
+.brands-logo {
+    display: none;
+}
+
+.swiper {
+    margin-top: 16px;
+    min-width: 320px;
+    height: 120px;
+    --swiper-theme-color: #9e9fa0;
+}
+
+.swiper-wrapper {
+    margin-left: 16px;
+}
+
+}
+
+@media (min-width: 768px ) and (max-width: 1119px) {
+
+.mobile {
+    display: none;
+}
+
+.brands-logo {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.li__brands {
+    margin-bottom: 16px; 
+    margin-left: 24px;
+    width: 220px;
+    height: 72px;
+}
+
+.li__brands:nth-child(7),
+.li__brands:nth-child(8),
+.li__brands:nth-child(9),
+.li__brands:nth-child(10),
+.li__brands:nth-child(11) {
+    display: none;
+}
+
+}
+
+@media (min-width: 1120px ) and (max-width: 99999px) {
+
+.mobile {
+    display: none;
+}
+
+.brands-logo {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.li__brands {
+    margin-bottom: 16px; 
+    margin-left: 34px;
+    width: 240px;
+    height: 72px;
+}
+
+}

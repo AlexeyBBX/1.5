@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>block 1.5</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+</head>
+<body>
+        <div class="repair">
+            <p class="repair__text">Ремонт техники различных брендов</p>
+        </div>
+    <nav>
+        <ul class="brands-logo">
+            <li class="li__brands">
+                <img class="li__brands-img" src="./lenovo.svg" alt="">
+                <img class="li__go" src="./go.svg" alt="">
+            </li>
+            <li class="li__brands">
+                <img class="li__brands-img" src="./samsung.svg" alt="">
+                <img class="li__go" src="./go.svg" alt="">
+            </li>
+            <li class="li__brands">
+                <img class="li__brands-img" src="./apple.svg" alt="">
+                <img class="li__go" src="./go.svg" alt="">
+            </li>
+            <li class="li__brands">
+                <img class="li__brands-img" src="./viewsonic.svg" alt="">
+                <img class="li__go" src="./go.svg" alt="">
+            </li>
+            <li class="li__brands">
+                <img class="li__brands-img" src="./bosch.svg" alt="">
+                <img class="li__go" src="./go.svg" alt="">
+            </li>
+            <li class="li__brands">
+                <img class="li__brands-img" src="./hp.svg" alt="">
+                <img class="li__go" src="./go.svg" alt="">
+            </li>
+            <li class="li__brands">
+                <img class="li__brands-img" src="./acer.svg" alt="">
+                <img class="li__go" src="./go.svg" alt="">
+            </li>
+            <li class="li__brands">
+                    <img class="li__brands-img" src="./sony.svg" alt="">
+                    <img class="li__go" src="./go.svg" alt="">
+            </li>
+            <span id="dots"></span>
+            <span id="more">
+                <div class="brands-logo">
+                    <li class="li__brands">
+                                    <img class="li__brands-img" src="./lenovo.svg" alt="">
+                                    <img class="li__go" src="./go.svg" alt="">
+                    </li>
+                    <li class="li__brands">
+                                    <img class="li__brands-img" src="./samsung.svg" alt="">
+                                    <img class="li__go" src="./go.svg" alt="">
+                    </li>
+                    <li class="li__brands">
+                                    <img class="li__brands-img" src="./apple.svg" alt="">
+                                    <img class="li__go" src="./go.svg" alt="">
+                    </li>
+                </div>
+            </span>
+        </ul>
+        <button id="btn" onclick="readMore()">
+            <img id="img" src="./expand.svg" alt="expand">
+            <p>Показать все</p>
+        </button>
+    </nav>
+
+    <script>
+        function readMore() {
+            var dots = document.getElementById("dots");
+            var more = document.getElementById("more");
+            var btn = document.getElementById("btn");
+            var img = document.getElementById("img");
+            document.body.appendChild(img);
+            img.style.display='flex';
+            img.style.margin='-23px 24px 0';
+            btn.style.margin='0 57px 0';
+                if (dots.style.display === "none") {
+                    dots.style.display="inline"
+                    btn.innerHTML="Показать все";
+                    more.style.display="none";
+                    img.style.transform="rotate(0turn)";
+                }
+                else {
+                    dots.style.display = "none"
+                    btn.innerHTML="Скрыть";
+                    more.style.display="inline";
+                    img.style.transform="rotate(0.5turn)";
+                }
+        }
+    </script>
+
+    <!-- Slider main container -->
+    <div class="mobile">
+<div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+        <div class="swiper-slide">
+            <li class="li__brands">
+                <img class="li__brands-img" src="./lenovo.svg" alt="">
+                <img class="li__go" src="./go.svg" alt="">
+            </li>
+        </div>
+        <div class="swiper-slide">            
+            <li class="li__brands">
+                <img class="li__brands-img" src="./samsung.svg" alt="">
+                <img class="li__go" src="./go.svg" alt="">
+            </li>
+        </div>
+        <div class="swiper-slide">
+            <li class="li__brands">
+                <img class="li__brands-img" src="./apple.svg" alt="">
+                <img class="li__go" src="./go.svg" alt="">
+            </li>
+        </div>
+        <div class="swiper-slide">            
+            <li class="li__brands">
+                <img class="li__brands-img" src="./viewsonic.svg" alt="">
+                <img class="li__go" src="./go.svg" alt="">
+            </li>
+        </div>
+        <div class="swiper-slide">      
+            <li class="li__brands">
+                <img class="li__brands-img" src="./bosch.svg" alt="">
+                <img class="li__go" src="./go.svg" alt="">
+            </li>
+        </div>
+        <div class="swiper-slide">
+            <li class="li__brands">
+                <img class="li__brands-img" src="./hp.svg" alt="">
+                <img class="li__go" src="./go.svg" alt="">
+            </li>
+        </div>
+        <div class="swiper-slide">       
+            <li class="li__brands">
+                <img class="li__brands-img" src="./acer.svg" alt="">
+                <img class="li__go" src="./go.svg" alt="">
+            </li>
+        </div>
+        <div class="swiper-slide">            
+            <li class="li__brands">
+                <img class="li__brands-img" src="./sony.svg" alt="">
+                <img class="li__go" src="./go.svg" alt="">
+            </li>
+        </div>
+        <div class="swiper-slide">           
+            <li class="li__brands">
+                <img class="li__brands-img" src="./lenovo.svg" alt="">
+                <img class="li__go" src="./go.svg" alt="">
+            </li>
+        </div>
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+    <script>
+        const swiper = new Swiper('.swiper', {
+          // Optional parameters
+          direction: 'horizontal',
+          loop: true,
+        
+          // If we need pagination
+          pagination: {
+            el: '.swiper-pagination',
+          },
+        
+          // Navigation arrows
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+        
+          // And if we need scrollbar
+          scrollbar: {
+            el: '.swiper-scrollbar',
+          },
+          
+        slidesPerView: 1.24,
+        
+        });
+        
+    </script>
+  </div>
+</div>
+</body>
+</html>
